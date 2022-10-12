@@ -1,6 +1,5 @@
 public class Friend {
-    //Instansvariabler
-    //Instance variables
+
     private String name = "A friend";
     private int hp = 100;
 

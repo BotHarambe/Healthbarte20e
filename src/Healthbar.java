@@ -4,8 +4,9 @@ import java.awt.*;
 
 public class Healthbar extends JPanel {
 
-
-    public Healthbar() {
+    private Friend friend;
+    public Healthbar(Friend myFriend) {
+        this.friend = friend;
     }
 
     /*
@@ -22,6 +23,6 @@ public class Healthbar extends JPanel {
      */
     protected void addHealthbar(Graphics g) {
         g.setColor(Color.GREEN);
-        g.fillRect(10, 50, 300, 100);
+        g.fillRect(10, 50, friend.getHp() * 3, 100);
     }
 }
